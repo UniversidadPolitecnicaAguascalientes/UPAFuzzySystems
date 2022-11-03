@@ -1,6 +1,9 @@
 <h1 align="center">
-<img src="upa.png" width="200">
+<img src="upa.png" width="300">
 </h1><br>
+
+
+
 [![PyPI Downloads](https://img.shields.io/pypi/dm/UPAFuzzySystems.svg?label=PyPI%20downloads)](
 https://pypi.org/project/UPAFuzzySystems/)
 

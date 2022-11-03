@@ -11,7 +11,7 @@ https://pypi.org/project/UPAFuzzySystems/)
 
 UPAFuzzySystems library that allows defining Fuzzy Inference Systems for different applications with continuous and discrete universes, it also deploys structures for the simulation of fuzzy control with transfer functions and state space models.
 
-Developed by Dr. Martín Montes Rivera
+***Developed by Dr. Martín Montes Rivera***
 
 # Installation
 For installation, just run the command:

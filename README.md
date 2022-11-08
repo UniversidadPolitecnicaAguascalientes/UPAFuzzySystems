@@ -17,5 +17,5 @@ UPAFuzzySystems library that allows defining Fuzzy Inference Systems for differe
 For installation, just run the command:
 
 ```
-pip install UPAFuzzySystems==0.0.9
+pip install UPAFuzzySystems==0.1.0
 ```

@@ -28,3 +28,4 @@ For now check the Jupyter Notebook notebook, PDF or HTML examples for using the 
 
 [HTML](https://github.com/UniversidadPolitecnicaAguascalientes/UPAFuzzySystems/blob/main/examples/Examples-UPAFuzzySystems.html)
 
+[Other examples](https://github.com/UniversidadPolitecnicaAguascalientes/UPAFuzzySystems/tree/main/examples/other%20examples)

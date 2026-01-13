@@ -31,23 +31,23 @@ import UPAFuzzySystems as UPAfs
 ```
 After importing the libraries, we define the error input universe. In this case the set of integers in ranges $[-100,100]$.
 
-$$
+```math
 Error= \lbrace x ∈ Z : -100 ≤ x ≤ 100 \rbrace \tag{1}
-$$
+```
 
 Then, its fuzzy sets. 
 
-$$
+```math
 NegativeError = trapezoid(x; -100,-100,-50,0) \tag{2}
-$$
+```
 
-$$
+```math
 ZeroError = triangle(x; -1,0,1) \tag{3}
-$$
+```
 
-$$
+```math
 PositiveError = trapezoid(x; 0,50,100,100) \tag{4}
-$$
+```
 
 The code shows how to define and plot the input universe and its fuzzy sets with UPAFuzzySystems.
 ```python
@@ -66,23 +66,23 @@ The plot obtained of the input universe is in the figure below:
 
 Similarly, we define the control output universe and its fuzzy sets. In this case defining a set of integers in ranges $[-20,20]$.
 
-$$
+```math
 Control= \lbrace x ∈ Z : -20 ≤ x ≤ 20 \rbrace \tag{5}
-$$
+```
 
 Then, its fuzzy sets. 
 
-$$
+```math
 NegativeControl = trapezoid(x; -20,-20,-5,0) \tag{6}
-$$
+```
 
-$$
+```math
 ZeroControl = triangle(x; -5,0,5) \tag{7}
-$$
+```
 
-$$
+```math
 PositiveControl = trapezoid(x; 0,5,20,20) \tag{8}
-$$
+```
 
 The code shows how to define and plot the output universe and its fuzzy sets with UPAFuzzySystems.
 
@@ -102,15 +102,17 @@ The plot obtained of the output universe is in the figure below:
 
 After defining error and control universes we define which is the premise and the consequence. Then we specify the rules of the inference system.
 
-$$
+```math
 NegativeError \rightarrow NegativeControl
-$$
-$$
+```
+
+```math
 ZerroError \rightarrow ZeroControl
-$$
-$$
+```
+
+```math
 PositiveError \rightarrow PositiveControl
-$$
+```
 
 The code below shows the how to configure a Mamdani inference system with UPAFuzzySystems for defining its premise, consequence, and rules. Additionally, we include the expected response of the inference system through its surface.
 
@@ -140,9 +142,9 @@ The figure below shows the obtained surface for the inference system.
 After defining the inference system we define plant transfer function for controling the position in a DC motor in (9). 
 
 
-$$
+```math
 TF(s) = \frac{K}{s*((Js+b)*(Ls+R)+K^2)} \tag{9} 
-$$ 
+```
 
 The code below specify the transfer function, its parameters and creates an input step for making the controller to folow a reference of 45º degrees.
 

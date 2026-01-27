@@ -31,23 +31,58 @@ import UPAFuzzySystems as UPAfs
 ```
 After importing the libraries, we define the error input universe. In this case the set of integers in ranges $[-100,100]$.
 
-```math
-Error= \lbrace x ∈ Z : -100 ≤ x ≤ 100 \rbrace \tag{1}
-```
+
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq1-light.svg#gh-light-mode-only" alt="Equation 1" width="260">
+      <img src="equations/eq1-dark.svg#gh-dark-mode-only" alt="Equation 1" width="260">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(1)</em>
+    </td>
+  </tr>
+</table>
 
 Then, its fuzzy sets. 
 
-```math
-NegativeError = trapezoid(x; -100,-100,-50,0) \tag{2}
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq2-light.svg#gh-light-mode-only" alt="Equation 2" width="400">
+      <img src="equations/eq2-dark.svg#gh-dark-mode-only" alt="Equation 2" width="400">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(2)</em>
+    </td>
+  </tr>
+</table>
 
-```math
-ZeroError = triangle(x; -1,0,1) \tag{3}
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq3-light.svg#gh-light-mode-only" alt="Equation 3" width="260">
+      <img src="equations/eq3-dark.svg#gh-dark-mode-only" alt="Equation 3" width="260">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(3)</em>
+    </td>
+  </tr>
+</table>
 
-```math
-PositiveError = trapezoid(x; 0,50,100,100) \tag{4}
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq4-light.svg#gh-light-mode-only" alt="Equation 4" width="350">
+      <img src="equations/eq4-dark.svg#gh-dark-mode-only" alt="Equation 4" width="350">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(4)</em>
+    </td>
+  </tr>
+</table>
+
+
 
 The code shows how to define and plot the input universe and its fuzzy sets with UPAFuzzySystems.
 ```python
@@ -66,23 +101,61 @@ The plot obtained of the input universe is in the figure below:
 
 Similarly, we define the control output universe and its fuzzy sets. In this case defining a set of integers in ranges $[-20,20]$.
 
-```math
-Control= \lbrace x ∈ Z : -20 ≤ x ≤ 20 \rbrace \tag{5}
-```
+
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq5-light.svg#gh-light-mode-only" alt="Equation 5" width="280">
+      <img src="equations/eq5-dark.svg#gh-dark-mode-only" alt="Equation 5" width="260">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(5)</em>
+    </td>
+  </tr>
+</table>
+
 
 Then, its fuzzy sets. 
 
-```math
-NegativeControl = trapezoid(x; -20,-20,-5,0) \tag{6}
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq6-light.svg#gh-light-mode-only" alt="Equation 6" width="380">
+      <img src="equations/eq6-dark.svg#gh-dark-mode-only" alt="Equation 6" width="380">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(6)</em>
+    </td>
+  </tr>
+</table>
 
-```math
-ZeroControl = triangle(x; -5,0,5) \tag{7}
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq7-light.svg#gh-light-mode-only" alt="Equation 7" width="280">
+      <img src="equations/eq7-dark.svg#gh-dark-mode-only" alt="Equation 7" width="280">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(7)</em>
+    </td>
+  </tr>
+</table>
 
-```math
-PositiveControl = trapezoid(x; 0,5,20,20) \tag{8}
-```
+
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq8-light.svg#gh-light-mode-only" alt="Equation 8" width="350">
+      <img src="equations/eq8-dark.svg#gh-dark-mode-only" alt="Equation 8" width="350">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(8)</em>
+    </td>
+  </tr>
+</table>
+
+
+
 
 The code shows how to define and plot the output universe and its fuzzy sets with UPAFuzzySystems.
 
@@ -102,22 +175,48 @@ The plot obtained of the output universe is in the figure below:
 
 After defining error and control universes we define which is the premise and the consequence. Then we specify the rules of the inference system.
 
-```math
-NegativeError \rightarrow NegativeControl
-```
 
-```math
-ZerroError \rightarrow ZeroControl
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq9-light.svg#gh-light-mode-only" alt="Equation 9" width="300">
+      <img src="equations/eq9-dark.svg#gh-dark-mode-only" alt="Equation 9" width="300">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(9)</em>
+    </td>
+  </tr>
+</table>
 
-```math
-PositiveError \rightarrow PositiveControl
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq10-light.svg#gh-light-mode-only" alt="Equation 10" width="230">
+      <img src="equations/eq10-dark.svg#gh-dark-mode-only" alt="Equation 10" width="230">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(10)</em>
+    </td>
+  </tr>
+</table>
+
+
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq11-light.svg#gh-light-mode-only" alt="Equation 11" width="280">
+      <img src="equations/eq11-dark.svg#gh-dark-mode-only" alt="Equation 11" width="280">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(11)</em>
+    </td>
+  </tr>
+</table>
+
 
 The code below shows the how to configure a Mamdani inference system with UPAFuzzySystems for defining its premise, consequence, and rules. Additionally, we include the expected response of the inference system through its surface.
 
 ```python
- 
 #Defining Rules and Building Inference System
 Mamdani1 = UPAfs.inference_system('Mamdani')
 Mamdani1.add_premise(Error_universe)
@@ -139,18 +238,25 @@ The figure below shows the obtained surface for the inference system.
 <img src="SurfaceResponse.png" width="600">
 </h1><br>
 
-After defining the inference system we define plant transfer function for controling the position in a DC motor in (9). 
+After defining the inference system we define plant transfer function for controling the position in a DC motor in (12). 
 
 
-```math
-TF(s) = \frac{K}{s*((Js+b)*(Ls+R)+K^2)} \tag{9} 
-```
+<table align="center" style="border:0; border-collapse:collapse;">
+  <tr>
+    <td style="border:0; padding:0;">
+      <img src="equations/eq12-light.svg#gh-light-mode-only" alt="Equation 12" width="280">
+      <img src="equations/eq12-dark.svg#gh-dark-mode-only" alt="Equation 12" width="280">
+    </td>
+    <td style="border:0; padding-left:10px; vertical-align:right;">
+      <em>(12)</em>
+    </td>
+  </tr>
+</table>
 
 The code below specify the transfer function, its parameters and creates an input step for making the controller to folow a reference of 45º degrees.
 
 ```python
 #Defining the system to control (Position of a DC motor)
-
 J = 3.2284E-6
 b = 3.5077E-6
 K = 0.0274
@@ -208,3 +314,4 @@ For more details and other controllers check out the Jupyter Notebook notebook, 
 Have you found this software useful for your research?  Please cite it as:
 
 Montes Rivera, M.; Olvera-Gonzalez, E.; Escalante-Garcia, N. UPAFuzzySystems: A Python Library for Control and Simulation with Fuzzy Inference Systems. Machines 2023, 11, 572. https://doi.org/10.3390/machines11050572
+

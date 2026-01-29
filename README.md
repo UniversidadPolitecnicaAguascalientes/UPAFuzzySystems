@@ -2,7 +2,7 @@
 <img src="upa.png" width="300">
 </h1><br>
 
-[![PyPI Downloads](https://img.shields.io/pypi/dm/UPAFuzzySystems.svg?label=PyPI%20downloads)](
+[![PyPI Downloads](https://img.shields.io/pypi/dm/UPAFuzzySystems.png)](
 https://pypi.org/project/UPAFuzzySystems/)
 
 # UPAFuzzySystems

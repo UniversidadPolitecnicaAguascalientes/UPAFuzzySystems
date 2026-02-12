@@ -12,6 +12,8 @@ UPAFuzzySystems library that allows defining Fuzzy Inference Systems for differe
 ***Developed by Dr. Martín Montes Rivera***
 
 # Installation
+Requirements: numpy version 2.2.6 and control version 0.9.4; other versions introduce errors.
+
 For installation, just run the command:
 
 ```

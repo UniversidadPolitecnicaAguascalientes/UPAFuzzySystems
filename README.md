@@ -14,9 +14,11 @@ UPAFuzzySystems library that allows defining Fuzzy Inference Systems for differe
 # Installation
 Requirements: numpy version 2.2.6 and control version 0.9.4; other versions introduce errors.
 
-For installation, just run the command:
+For installation, just run the commands:
 
 ```
+pip install control==0.9.4
+pip install numpy==2.2.6
 pip install UPAFuzzySystems==0.2.4
 ```
 # Documentation

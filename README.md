@@ -17,8 +17,8 @@ Requirements: numpy version 1.26.4 and control version 0.9.4; other versions int
 For installation, just run the commands:
 
 ```
-pip install control==0.9.4
 pip install numpy==1.26.4
+pip install control==0.9.4
 pip install UPAFuzzySystems==0.2.4
 ```
 # Documentation
